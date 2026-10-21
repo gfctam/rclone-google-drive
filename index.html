@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rclone Google Drive</title>
+    <meta
+      name="description"
+      content="Personal rclone client used by Chi Hou Tam to copy, sync, and manage files in their own Google Drive."
+    />
+    <meta property="og:title" content="Rclone Google Drive" />
+    <meta
+      property="og:description"
+      content="Personal rclone client used by Chi Hou Tam to access their own Google Drive."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="index.html">
+          Rclone Google Drive
+          <span>Personal client</span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="privacy.html">Privacy policy</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content">
+      <div class="wrap">
+        <h1>Rclone Google Drive</h1>
+        <p class="lede">
+          A personal rclone client Chi Hou Tam uses to copy, sync, and manage
+          files in their own Google Drive.
+        </p>
+        <p class="updated">Updated 21 October 2026</p>
+
+        <dl class="facts">
+          <div>
+            <dt>Operator</dt>
+            <dd>Chi Hou Tam</dd>
+          </div>
+          <div>
+            <dt>Runs on</dt>
+            <dd>Your own computers</dd>
+          </div>
+          <div>
+            <dt>Google account</dt>
+            <dd>The operator’s own Drive</dd>
+          </div>
+        </dl>
+
+        <section class="section" aria-labelledby="what">
+          <h2 id="what">What this client does</h2>
+          <p>
+            <a href="https://rclone.org/">rclone</a> is an open-source program
+            that runs on a computer the operator controls. This client is the
+            OAuth application that lets that program talk to the Google Drive
+            API. The operator uses it to back up files, copy folders, and keep
+            a local disk and Google Drive in step.
+          </p>
+          <p>
+            File contents move between Google Drive and those computers. This
+            website only describes the client. It does not sign people in, and
+            it does not receive Drive files.
+          </p>
+          <p>
+            The program itself is published by the rclone project. This client
+            is Chi Hou Tam’s personal configuration and is independent of that
+            project.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="permissions">
+          <h2 id="permissions">Permissions it asks for</h2>
+          <p>
+            When the operator connects their Google account, Google shows a
+            consent screen for the scopes below. The client does not request
+            Gmail, Calendar, or Contacts.
+          </p>
+          <ul class="scopes">
+            <li>
+              <h3>See, edit, create, and delete Drive files</h3>
+              <p>
+                List folders, download files, upload files, update files, and
+                delete files when the operator runs a command that does so.
+              </p>
+              <code>https://www.googleapis.com/auth/drive</code>
+            </li>
+            <li>
+              <h3>View Drive file metadata</h3>
+              <p>
+                Read names, sizes, modification times, and other metadata used
+                to decide what needs to sync.
+              </p>
+              <code>https://www.googleapis.com/auth/drive.metadata.readonly</code>
+            </li>
+            <li>
+              <h3>See and manage Google Docs</h3>
+              <p>
+                Export and update Google Docs so a sync can include document
+                contents, not only the Drive file entry.
+              </p>
+              <code>https://www.googleapis.com/auth/docs</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="who">
+          <h2 id="who">Who it is for</h2>
+          <p>
+            Chi Hou Tam, connecting Chi Hou Tam’s own Google account. If a
+            Google consent screen sent you here and the account is not yours to
+            manage as the operator, decline the prompt.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="data">
+          <h2 id="data">How Google user data is handled</h2>
+          <ul class="summary">
+            <li>
+              <strong>Access.</strong> Drive files, Drive metadata, and Google
+              Docs, through the scopes above.
+            </li>
+            <li>
+              <strong>Use.</strong> Copy, sync, and manage the operator’s own
+              files.
+            </li>
+            <li>
+              <strong>Storage.</strong> In the operator’s Google Drive and on
+              computers the operator controls. The refresh token stays in the
+              local rclone configuration.
+            </li>
+            <li>
+              <strong>Sharing.</strong> With the operator’s own machines. The
+              client does not sell Google user data and does not use it for
+              advertising.
+            </li>
+          </ul>
+          <div class="callout">
+            <p>The full description is in the privacy policy.</p>
+            <p><a href="privacy.html">Read the privacy policy</a></p>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="operator">
+          <h2 id="operator">Operator</h2>
+          <p>
+            Chi Hou Tam<br />
+            <a href="mailto:chtam22@gmail.com">chtam22@gmail.com</a>
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Chi Hou Tam · <a href="privacy.html">Privacy policy</a> · Updated 21
+          October 2026
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

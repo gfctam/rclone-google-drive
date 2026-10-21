@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy · Rclone Google Drive</title>
+    <meta
+      name="description"
+      content="How the Rclone Google Drive client accesses, uses, stores, and shares Google user data."
+    />
+    <meta property="og:title" content="Privacy policy · Rclone Google Drive" />
+    <meta
+      property="og:description"
+      content="How the Rclone Google Drive client accesses, uses, stores, and shares Google user data."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="index.html">
+          Rclone Google Drive
+          <span>Personal client</span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="privacy.html" aria-current="page">Privacy policy</a>
+        </nav>
+      </div>
+    </header>
+    <main id="content" class="policy">
+      <div class="wrap">
+        <h1>Privacy policy</h1>
+        <p class="lede">
+          This policy describes how the Rclone Google Drive client accesses,
+          uses, stores, and shares Google user data. It also covers this
+          website, which only publishes these pages.
+        </p>
+        <p class="updated">Effective 21 October 2026</p>
+
+        <nav class="toc" aria-label="On this page">
+          <strong>On this page</strong>
+          <ol>
+            <li><a href="#who">Who operates this client</a></li>
+            <li><a href="#data-accessed">Google user data accessed</a></li>
+            <li><a href="#use">How that data is used</a></li>
+            <li><a href="#storage">Where that data is stored</a></li>
+            <li><a href="#sharing">Sharing</a></li>
+            <li><a href="#limited-use">Limited Use</a></li>
+            <li><a href="#website">This website</a></li>
+            <li><a href="#retention">Retention and deletion</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ol>
+        </nav>
+
+        <section aria-labelledby="who">
+          <h2 id="who">Who operates this client</h2>
+          <p>
+            Rclone Google Drive is operated by Chi Hou Tam
+            (<a href="mailto:chtam22@gmail.com">chtam22@gmail.com</a>). It is a
+            personal OAuth client for
+            <a href="https://rclone.org/">rclone</a>, an open-source program
+            the operator runs on computers they control. It is a personal
+            configuration, independent of the rclone project.
+          </p>
+          <p>
+            The client is used with the operator’s own Google account so rclone
+            can copy, sync, and manage files in that account’s Google Drive.
+          </p>
+        </section>
+
+        <section aria-labelledby="data-accessed">
+          <h2 id="data-accessed">Google user data accessed</h2>
+          <p>
+            When the operator grants access, the client can use these Google
+            OAuth scopes:
+          </p>
+          <ul class="scopes">
+            <li>
+              <h3>Google Drive files</h3>
+              <p>
+                See, create, change, and delete files and folders in the
+                connected Google Drive.
+              </p>
+              <code>https://www.googleapis.com/auth/drive</code>
+            </li>
+            <li>
+              <h3>Google Drive metadata</h3>
+              <p>
+                Read file and folder metadata, including names, sizes, and
+                modification times.
+              </p>
+              <code>https://www.googleapis.com/auth/drive.metadata.readonly</code>
+            </li>
+            <li>
+              <h3>Google Docs</h3>
+              <p>
+                View and manage Google Docs so document contents can be
+                exported and updated during a sync.
+              </p>
+              <code>https://www.googleapis.com/auth/docs</code>
+            </li>
+          </ul>
+          <p>
+            The client does not request access to Gmail, Google Calendar,
+            Google Contacts, or other Google products outside Drive and Docs.
+          </p>
+        </section>
+
+        <section aria-labelledby="use">
+          <h2 id="use">How that data is used</h2>
+          <p>Google user data is used to provide the operator’s file sync:</p>
+          <ul>
+            <li>List files and folders in the operator’s Drive.</li>
+            <li>
+              Download file contents to a computer the operator controls.
+            </li>
+            <li>
+              Upload new files, update existing files, and delete files when
+              the operator runs a command that does so.
+            </li>
+            <li>
+              Read metadata to decide which files have changed.
+            </li>
+            <li>
+              Export and update Google Docs when a sync includes those
+              documents.
+            </li>
+          </ul>
+          <p>
+            Google user data is not used for advertising, is not sold, and is
+            not used to build profiles of anyone other than the operator acting
+            on their own account.
+          </p>
+        </section>
+
+        <section aria-labelledby="storage">
+          <h2 id="storage">Where that data is stored</h2>
+          <p>
+            Drive files remain in the operator’s Google account. Copies that
+            rclone downloads are stored on disks the operator chooses, such as
+            a personal computer or another machine the operator administers.
+          </p>
+          <p>
+            After consent, Google issues a refresh token. rclone stores that
+            token in its configuration file on the operator’s computer. The
+            OAuth client secret is kept in the operator’s Google Cloud project
+            and in that same local configuration. This website does not store
+            the token or the client secret.
+          </p>
+        </section>
+
+        <section aria-labelledby="sharing">
+          <h2 id="sharing">Sharing</h2>
+          <p>
+            Google user data is transferred to Google, as part of Drive API
+            calls, and to computers the operator controls. The only person who
+            uses this client is the operator, working with their own files.
+            There is no separate staff or support team with access to those
+            files.
+          </p>
+          <p>
+            The operator does not sell Google user data and does not transfer
+            it to third parties for their own purposes. A transfer can still
+            happen if the law requires it, or if it is needed to prevent a
+            security incident affecting the operator’s account or machines.
+          </p>
+        </section>
+
+        <section aria-labelledby="limited-use">
+          <h2 id="limited-use">Limited Use</h2>
+          <p>
+            Rclone Google Drive’s use and transfer to any other app of
+            information received from Google APIs will adhere to the
+            <a href="https://developers.google.com/terms/api-services-user-data-policy"
+              >Google API Services User Data Policy</a
+            >, including the Limited Use requirements.
+          </p>
+        </section>
+
+        <section aria-labelledby="website">
+          <h2 id="website">This website</h2>
+          <p>
+            These pages describe the client and this policy. The site does not
+            ask visitors to sign in, does not set cookies, and does not use
+            analytics. It does not receive or store Google user data. Loading a
+            page does not send the visitor’s Drive contents anywhere.
+          </p>
+        </section>
+
+        <section aria-labelledby="retention">
+          <h2 id="retention">Retention and deletion</h2>
+          <p>
+            Files stay in Google Drive until the operator deletes them there,
+            and local copies stay on the operator’s disks until the operator
+            deletes them. Metadata is kept only as part of those files and of
+            rclone’s local configuration.
+          </p>
+          <p>
+            The operator can remove this client’s access at any time from
+            <a href="https://myaccount.google.com/permissions"
+              >Google Account third-party access</a
+            >. Revoking access stops new API calls. The operator can also
+            delete the saved token from the local rclone configuration. Copies
+            already downloaded remain until the operator deletes those files.
+          </p>
+        </section>
+
+        <section aria-labelledby="security">
+          <h2 id="security">Security</h2>
+          <p>
+            The operator keeps the rclone configuration, including the refresh
+            token and client secret, on machines they control and does not
+            publish those values. This website will never ask for a client
+            secret, a refresh token, or a Google password.
+          </p>
+        </section>
+
+        <section aria-labelledby="children">
+          <h2 id="children">Children</h2>
+          <p>
+            This client and this website are for the operator’s own use. They
+            are not directed at children, and the operator does not knowingly
+            collect personal information from children.
+          </p>
+        </section>
+
+        <section aria-labelledby="changes">
+          <h2 id="changes">Changes</h2>
+          <p>
+            If the way this client handles Google user data changes, this page
+            will be updated and the effective date above will change. The
+            current version is always the one published at this URL.
+          </p>
+        </section>
+
+        <section aria-labelledby="contact">
+          <h2 id="contact">Contact</h2>
+          <p>
+            Questions about this policy or about the client’s use of Google
+            user data:
+          </p>
+          <p>
+            Chi Hou Tam<br />
+            <a href="mailto:chtam22@gmail.com">chtam22@gmail.com</a>
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Chi Hou Tam · <a href="index.html">Home</a> · Effective 21 October
+          2026
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
